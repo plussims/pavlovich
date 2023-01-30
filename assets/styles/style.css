@@ -1,0 +1,121 @@
+@font-face {
+    font-family: "HelveticaNeueLTProLt";
+    src: url(../fonts/HelveticaNeueLTProLt.woff) format("woff");
+  }
+
+  @font-face {
+    font-family: "HelveticaNeueLTProMd";
+    src: url(../fonts/HelveticaNeueLTProMd.woff) format("woff");
+  }
+
+  @font-face {
+    font-family: "HelveticaNeueLTProRoman";
+    src: url(../fonts/HelveticaNeueLTProRoman.woff) format("woff");
+  }
+
+  @font-face {
+    font-family: "Merriweather-LightItalic";
+    src: url(../fonts/Merriweather-LightItalic.woff) format("woff");
+  }
+
+  @font-face {
+    font-family: "Montserrat-Light";
+    src: url(../fonts/Montserrat-Light.woff) format("woff");
+  }
+
+  @font-face {
+    font-family: "Montserrat-Regular";
+    src: url(../fonts/Montserrat-Regular.woff) format("woff");
+  }
+
+  @font-face {
+    font-family: "Roboto-Regular";
+    src: url(../fonts/Roboto-Regular.woff) format("woff");
+  }
+/* Style */
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.header__content {
+    text-align: center;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.header__title {
+    font-family: HelveticaNeueLTProLt;
+    font-size: 44px;
+    line-height: 41px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #1d1e1f;
+    margin: 207px auto 6px;
+}
+
+.header__text {
+    font-family: "Merriweather-LightItalic", ;
+    font-size: 16px;
+    line-height: 17px;
+    font-weight: 300;
+    font-style: italic;
+    letter-spacing: 0.03em;
+    color: #898888;
+    margin: 0 auto 68px;
+}
+
+.header__button {
+    font-family: Montserrat-Regular;
+    font-size: 13px;
+    line-height: 17px;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    color: #000000;
+    text-decoration: none;
+    padding: 25px 50px;
+    border: 1px solid #000000;
+}
+
+.header__button a{
+    text-decoration: none;
+}
+
+.menu_item:last-child a{
+    margin-right: 0;
+}
+
+.logo{
+    margin: 0 16px;
+}
+
+.menu_item a {
+    font-family: "Roboto-Regular";
+    font-size: 13px;
+    line-height: 17px;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    color: #989696;
+    text-decoration: none;
+    margin-right: 43px;
+}
+.active a{
+    color: #010101;
+}
