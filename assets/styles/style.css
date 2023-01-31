@@ -47,7 +47,9 @@ body{
     padding: 0 15px;
     margin: 0 auto;
 }
-
+header{
+  margin-bottom: 207px; 
+}
 .header__content {
     text-align: center;
 }
@@ -115,7 +117,118 @@ body{
     color: #989696;
     text-decoration: none;
     margin-right: 43px;
+    transition: .3s;
 }
-.active a{
+.active a, .menu_item a:hover{
     color: #010101;
+}
+/* About Section */
+.about{
+  height: 1129px;
+  background-color: #1d1d1d;
+  padding-top: 128px;
+  padding-bottom: 271px;
+  background-image: url(../img/build.png),
+  url(../img/build_dark.png);
+  background-position: center;
+  background-position: bottom;
+  background-repeat: repeat-x;
+}
+.about__inner{
+display: grid;
+grid-template-rows: max-content max-content;
+grid-template-columns: max-content max-content;
+grid-gap: 178px;
+place-content: center center;
+}
+.about__item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 417px;
+  height: 276px;
+  background-color: #181818;
+}
+.about__year{
+  font-family: HelveticaNeueLTProLt;
+  font-size: 48px;
+  line-height: 26px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: #fefefe;
+  margin-bottom: 27px;
+}
+.about__text{
+  font-family: Montserrat-Regular;
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  color: #b7b7b7;
+  text-align: center;
+}
+/* Team */
+.team {
+  height: 745px;    
+}
+.block__head {
+  text-align: center;
+}
+.block__title {
+  font-family: "HelveticaNeueLTProLt", sans-serif;
+  font-size: 34px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: #1d1e1f;
+  margin: 0;
+  padding-top: 138px;
+  margin-bottom: 13px;
+}
+.block__text {
+  font-family: "Merriweather-LightItalic", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: italic;
+  letter-spacing: 0.02em;
+  color: #898888;
+  margin: 0;
+}
+.team__inner {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 127px;
+}
+.team__item {
+  text-align: center;
+}
+.team__item-img {
+  margin-bottom: 29px;
+}
+.team__item-title {
+  font-family: "HelveticaNeueLTProLt", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: #464646;
+  margin: 0;
+  margin-bottom: 7px;
+}
+.team__item-text {
+  font-family: "HelveticaNeueLTProLt", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: #b3b3b3;
+  margin: 0;
+  margin-bottom: 21px;
+}
+.team__icon-box a {
+  padding: 0 14px;
+  font-size: 20px;
+  color: #e4e4e4;
+  transition: 0.2s;
+}
+.team__icon-box a:hover {
+  color: #949494;
 }
