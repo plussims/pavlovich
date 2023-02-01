@@ -130,8 +130,7 @@ header{
   padding-bottom: 271px;
   background-image: url(../img/build.png),
   url(../img/build_dark.png);
-  background-position: center;
-  background-position: bottom;
+  background-position-y: 101%;
   background-repeat: repeat-x;
 }
 .about__inner{
@@ -203,7 +202,15 @@ place-content: center center;
   text-align: center;
 }
 .team__item-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
   margin-bottom: 29px;
+}
+.team__item-img[alt="Team1"]{
+  object-position: center right;
 }
 .team__item-title {
   font-family: "HelveticaNeueLTProLt", sans-serif;
