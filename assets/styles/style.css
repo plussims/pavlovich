@@ -43,7 +43,7 @@ body{
 }
 
 .container {
-    width: 1200px;
+    max-width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
 }
@@ -96,8 +96,9 @@ header{
     border: 1px solid #000000;
 }
 
-.header__button a{
+.header__button{
     text-decoration: none;
+    transition: all .7s ease;
 }
 
 .menu_item:last-child a{
@@ -119,8 +120,12 @@ header{
     margin-right: 43px;
     transition: .3s;
 }
-.active a, .menu_item a:hover{
+.active a,.menu_item a:hover{
     color: #010101;
+}
+.header__button:hover{
+  background-color: #010101;
+  color: #fff;
 }
 /* About Section */
 .about{
@@ -130,7 +135,7 @@ header{
   padding-bottom: 271px;
   background-image: url(../img/build.png),
   url(../img/build_dark.png);
-  background-position-y: 101%;
+  background-position-y: 102%;
   background-repeat: repeat-x;
 }
 .about__inner{
@@ -310,16 +315,100 @@ place-content: center center;
   
 }
 .circle{
-display: flex;
-align-items: center;
-margin: 0 auto;
-width: 170px;
-height: 170px;
-border: 4px solid #ffffff;
-border-radius: 50%;
+  display: flex;
+  width: 170px;
+  height: 170px;
+  align-items: center;
+  margin: 0 auto;
+  border: 5px solid #ffffff;
+  border-radius: 50%;
 }
 .icon-heart, .icon-chart-line, .icon-upload-cloud-outline{
   margin: 0 auto;
   color: white;
   font-size: 64px;
+}
+@media screen and (max-width: 769px){
+
+  .container {
+    max-width: 768px;
+  }
+
+  .about{
+      height: auto;
+      padding-bottom: 200px;
+      background-position: center 102%, center 102%;
+  }
+
+  .about__inner{
+    grid-gap: 30px;
+    grid-template-columns: max-content;
+  }
+
+  .services{
+      padding-bottom: 100px;
+      height: 100%;
+  }
+
+  .team .block__title,
+  .services .block__title
+  {
+      padding-top: 100px;
+  }
+
+  .services__inner{
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+
+  .services__item{
+      padding: 0 30px 30px;
+  }
+
+}
+
+@media screen and (max-width: 376px){
+
+  .menu{
+    display: none;
+  }
+
+  .container {
+    max-width: 375px;
+  }
+  
+  .header__title {
+      padding-top: 100px;
+      margin-bottom: 30px;
+  }
+
+  .header__button{
+      margin-bottom: 100px;
+  }
+
+  .about__item{
+      width: 340px;
+  }
+
+  .team{
+      height: auto;
+      padding-bottom: 80px;
+  }
+
+  .team__inner{
+      flex-wrap: wrap;
+      padding-top: 100px;
+  }
+
+  .team__item{
+      width: 340px;
+      margin-bottom: 50px;
+  }
+  .team__item:last-child{
+      margin-bottom: 0;
+  }
+
+  .services__inner{
+      padding-top: 100px;
+  }
 }
